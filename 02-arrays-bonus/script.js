@@ -27,7 +27,13 @@ teachers.splice(5, 1);
 console.log(teachers);
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = null;
+const isFabioPresent = teachers.indexOf('Fabio');
+if (isFabioPresent !== -1) {
+  console.log(`Fabio è presente nell'array teachers.`);
+} else {
+  console.log(`Fabio non è presente nell'array teachers.`);
+}
+
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 const teachersString = null;
